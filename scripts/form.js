@@ -5,13 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.getElementById("contact-form");
 
   // Country dropdown functionality
-  countrySelector.addEventListener("click", toggleCountryDropdown);
+  countrySelector.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent document click from immediately closing dropdown
+    toggleCountryDropdown();
+  });
 
-  function toggleCountryDropdown() {
-    countryOptions.classList.toggle("show");
-  }
+  // Add document click listener to close dropdown when clicking outside
+  document.addEventListener("click", () => {
+    if (countryOptions.classList.contains("show")) {
+      countryOptions.classList.remove("show");
+    }
+  });
 
+  // Prevent dropdown from closing when clicking inside the options
   countryOptions.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent document click from triggering
     const selectedValue = event.target.innerHTML;
     const fieldLabel = countrySelector.querySelector("#label-country");
     const errorMessage = countrySelector.querySelector(".form-error_msg");
@@ -25,6 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     countryOptions.classList?.remove("show");
   });
+
+  function toggleCountryDropdown() {
+    countryOptions.classList.toggle("show");
+  }
 
   // Form submission handling
   contactForm.addEventListener("submit", (event) => {
