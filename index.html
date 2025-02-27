@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <script defer src="./scripts/form.js"></script>
+    <script defer src="./scripts/nav.js"></script>
+    <script defer src="./scripts/modal.js"></script>
+    <script defer src="./scripts/carousel.js"></script>
+
+    <title>Get an Intervention</title>
+  </head>
+  <body>
+    <!-- NAV SECTION -->
+    <div class="nav__container container">
+      <div class="nav container__content">
+        <div class="nav-logo">
+          <img src="assets/logo.svg" alt="LOGO" />
+        </div>
+        <div class="nav-logo-mobile">
+          <img src="assets/logo-360.png" alt="LOGO" />
+        </div>
+        <div class="burger-container" id="burger">
+          <img src="assets/burger.png" alt="" />
+        </div>
+        <div class="nav-items__container" id="nav-dropdown">
+          <div class="nav-items">
+            <a href="#home" class="active nav-item"><span>HOME</span></a>
+            <a href="#about" class="nav-item"><span>ABOUT</span></a>
+            <a href="#contact" class="nav-item"><span>CONTACT</span></a>
+            <a class="nav-separator"><span>|</span></a>
+          </div>
+          <a href="tel: 123.456.7890" class="nav-item__contact">
+            CALL NOW FOR A CONSULT
+            <span class="nav-item-contact__number">123.456.7890</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BANNER SECTION -->
+    <div class="banner__container container">
+      <div class="banner container__content">
+        <div class="banner__contents">
+          <div class="banner-content__header banner-desktop__header">
+            <img src="assets/banner-header.svg" alt="BANNER HEADER DESKTOP" />
+          </div>
+          <div class="banner-content__header banner-tablet__header">
+            <img src="assets/GET AN INTERVENTION-768.png" alt="" />
+          </div>
+          <div class="banner-content__header banner-mobile__header">
+            <img src="assets/GET AN INTERVENTION-360.png" alt="" />
+          </div>
+          <p>
+            Showing greater respect to older adults can
+            <br class="mobile-breaks" />
+            be done
+            <br class="tablet-breaks" />
+            in several ways : acknowledging and <br class="mobile-breaks" />
+            putting to use the talents
+            <br class="tablet-breaks" />
+            and skills of older <br class="mobile-breaks" />
+            adults; creating intergenerational initiatives;
+            <br class="mobile-breaks" />
+            <br class="tablet-breaks" />
+            and allowing older adults to stay active and
+            <br class="mobile-breaks" />
+            independent
+            <br class="tablet-breaks" />
+            for as long as possible.
+          </p>
+        </div>
+
+        <div class="banner__form">
+          <div class="form">
+            <form id="contact-form">
+              <h2>Contact Us</h2>
+
+              <div class="grid-container-inputs">
+                <div class="grid-inputs">
+                  <div class="input-container">
+                    <input type="text" name="fname" id="fname" placeholder="" />
+                    <label for="fname">First Name</label>
+                  </div>
+
+                  <div class="input-container">
+                    <input type="text" name="email" id="email" placeholder="" />
+                    <label for="email">Business Email</label>
+                  </div>
+                </div>
+
+                <div class="grid-inputs">
+                  <div class="input-container">
+                    <input type="text" name="lname" id="lname" placeholder="" />
+                    <label for="lname">Last Name</label>
+                  </div>
+
+                  <div class="input-container">
+                    <input
+                      type="text"
+                      name="company"
+                      id="company"
+                      placeholder=""
+                    />
+                    <label for="company">Company</label>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="input-container country-list__select"
+                id="country-list__select"
+              >
+                <label for="country" id="label-country">Country</label>
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  placeholder=""
+                  readonly
+                />
+                <span class="select-arrow"
+                  ><img src="./assets/polygon.svg" alt="DROPDOWN"
+                /></span>
+                <div class="country-lists" id="country-lists">
+                  <ul>
+                    <li>Philippines</li>
+                    <li>United States of America</li>
+                    <li>Australia</li>
+                    <li>Japan</li>
+                    <li>China</li>
+                    <li>New Zealand</li>
+                    <li>Singapore</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="submit-btn__container">
+                <button class="submit-btn">
+                  <img src="assets/paper-plane.svg" alt="" />
+                  <span>Submit</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-extra-overlay">
+        <img
+          src="assets/banner-mobile-overlay-extra-360.png"
+          class="mobile-extra-overlay"
+          alt=""
+        />
+      </div>
+      <div class="banner__overlays">
+        <!-- DESKTOP -->
+        <div class="desktop-overlay">
+          <img src="assets/desktop-curve-large.svg" alt="" />
+        </div>
+        <div class="desktop-overlay">
+          <img src="assets/desktop-curve-small.svg" alt="" />
+        </div>
+        <!-- TABLET -->
+        <div class="tablet-overlay">
+          <img src="assets/wave-768.png" alt="" />
+        </div>
+        <!-- MOBILE -->
+        <div class="mobile-overlay">
+          <img src="assets/wave-360.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="container about__container">
+      <div class="container__content">
+        <div class="about-image__grid">
+          <div><img src="assets/about-img-1.png" alt="ABOUT 1" /></div>
+          <div><img src="assets/about-img-2.png" alt="ABOUT 2" /></div>
+          <div><img src="assets/about-img-3.png" alt="ABOUT 3" /></div>
+        </div>
+
+        <div class="about-text-content">
+          <div class="about-text__header">
+            <div class="about-header">
+              <img src="assets/we-undertand.png" alt="WE UNDERSTAND" />
+              <img src="assets/WE UNDERSTAND-360.png" alt="WE UNDERSTAND" />
+            </div>
+            <div class="about-line">
+              <img src="assets/about-line-1440.png" alt="LINE" />
+              <img src="assets/line-768.png" alt="LINE" />
+              <img src="assets/line-360.png" alt="LINE" />
+            </div>
+          </div>
+
+          <div class="about-text__grid">
+            <div>
+              <p class="tablet-texts mobile-texts">
+                Older adults want to play active and meaningful roles in their
+                lives, including as part of a social network, a neighborhood,
+                and a community. Service providers and policymakers must
+                consider that a lack of sense of purpose can become problematic
+                as people age. Engaging them in leisure activities and volunteer
+                work is important.
+              </p>
+              <p class="tablet-texts">
+                Older adults want to stay active and contribute to society in a
+                reciprocal manner (meaning that they want to exchange their
+                services and skills with others for the mutual benefit of the
+                neighborhood or community).
+              </p>
+              <p class="desktop-texts">
+                Older adults want to play active and meaningful roles in their
+                lives, including as part of a social network, a neighborhood,
+                and a community. Service providers and policymakers must
+                consider that a lack of sense of purpose can become problematic
+                as people age. &nbsp;Engaging them in leisure activities and
+                volunteer work is important.
+              </p>
+            </div>
+            <div class="desktop-texts mobile-texts">
+              <p>
+                Older adults want to stay active and contribute to society in a
+                reciprocal manner (meaning that they want to exchange their
+                services and skills with others for the mutual benefit of the
+                neighborhood or community).&nbsp;Qualitative and quantitative
+                studies published from 2005 to 2016 examining the social needs
+                of older adults were eligible for inclusion.
+              </p>
+            </div>
+            <div>
+              <p class="tablet-texts">
+                Qualitative and quantitative studies published from 2005 to 2016
+                examining the social needs of older adults were eligible for
+                inclusion. To stimulate social contacts, neighborhood
+                initiatives can be developed. Social meeting places, such as
+                pubs and churches can help to foster the development of close
+                and peripheral relationships.
+              </p>
+              <p class="desktop-texts mobile-texts">
+                To stimulate social contacts, neighborhood <br />
+                initiatives can be developed. Social meeting places, such as
+                pubs and churches can help to foster the development of close
+                and peripheral relationships.
+              </p>
+
+              <button class="success-rate-btn">
+                <span>92% Success Rate</span>
+                <img src="assets/arrow-line.svg" alt="ARROW LINE" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAROUSEL SECTION -->
+    <div class="container">
+      <div class="container__content carousel__container">
+        <div class="carousels">
+          <div class="arrow">
+            <svg
+              class="arrow arrow-left"
+              id="arrow-left"
+              width="25"
+              height="40"
+              viewBox="0 0 25 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.24 35.76L8.47999 20L24.24 4.24L20 -3.70673e-07L-7.78829e-06 20L20 40L24.24 35.76Z"
+                fill="#EAEAEA"
+              />
+            </svg>
+          </div>
+
+          <div class="carousel-items">
+            <!-- CAROUSEL ITEM -->
+            <div class="carousel-item active" id="carousel-item">
+              <div class="carousel-item__img">
+                <img src="assets/carousel-img-1.png" alt="CAROUSEL 1" />
+              </div>
+              <div class="carousel-text-content">
+                <h4>Abbie Harvey</h4>
+
+                <p>
+                  I have been caring for my mom & dad off and on for about
+                  <br class="desktop-break" />
+                  10 years now, and I know the importance of me being there
+                  <br class="desktop-break" />
+                  for appointments. Older people need attention, love and
+                  <br class="desktop-break" />
+                  care that they truly deserve.
+                </p>
+
+                <img src="assets/qoute.svg" alt="QUOTE" class="quote-img" />
+              </div>
+            </div>
+            <!-- CAROUSEL ITEM 2 -->
+            <div class="carousel-item inactive-left" id="carousel-item">
+              <div class="carousel-item__img">
+                <img src="assets/carousel-img-2.png" alt="CAROUSEL 1" />
+              </div>
+              <div class="carousel-text-content">
+                <h4>Tom Hiddleston</h4>
+
+                <p>
+                  I have been caring for my mom & dad off and on for about
+                  <br class="desktop-break" />
+                  10 years now, and I know the importance of me being there
+                  <br class="desktop-break" />
+                  for appointments. Older people need attention, love and
+                  <br class="desktop-break" />
+                  care that they truly deserve.
+                </p>
+
+                <img src="assets/qoute.svg" alt="QUOTE" class="quote-img" />
+              </div>
+            </div>
+            <!-- CAROUSEL ITEM 3 -->
+            <div class="carousel-item inactive-left" id="carousel-item">
+              <div class="carousel-item__img">
+                <img src="assets/carousel-img-3.png" alt="CAROUSEL 1" />
+              </div>
+              <div class="carousel-text-content">
+                <h4>Taylor Swift</h4>
+
+                <p>
+                  I have been caring for my mom & dad off and on for about
+                  <br class="desktop-break" />
+                  10 years now, and I know the importance of me being there
+                  <br class="desktop-break" />
+                  for appointments. Older people need attention, love and
+                  <br class="desktop-break" />
+                  care that they truly deserve.
+                </p>
+
+                <img src="assets/qoute.svg" alt="QUOTE" class="quote-img" />
+              </div>
+            </div>
+          </div>
+          <div class="arrow">
+            <svg
+              class="arrow-right"
+              id="arrow-right"
+              width="25"
+              height="40"
+              viewBox="0 0 25 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.24 35.76L8.47999 20L24.24 4.24L20 -3.70673e-07L-7.78829e-06 20L20 40L24.24 35.76Z"
+                fill="#EAEAEA"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <div>
+            <svg
+              class="dot"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="8" cy="8" r="8" fill="#EAEAEA" />
+            </svg>
+          </div>
+          <div>
+            <svg
+              class="dot"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="8" cy="8" r="8" fill="#EAEAEA" />
+            </svg>
+          </div>
+          <div>
+            <svg
+              class="dot"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="8" cy="8" r="8" fill="#EAEAEA" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT 2 SECTION -->
+    <div class="container about-2__container">
+      <div class="container__content">
+        <!-- HEADER -->
+        <div class="about-2-header__container">
+          <div class="about-2__header">
+            <img
+              src="assets/organize-everything.png"
+              alt="ORGANIZE EVERYTHING"
+            />
+            <img
+              src="assets/organize-everything-360.png"
+              alt="ORGANIZE EVERYTHING"
+            />
+          </div>
+          <div class="about-2__line">
+            <img src="assets/about-2__line-1440.png" alt="LINE" />
+            <img src="assets/organize-everything-line-360.png" alt="LINE" />
+          </div>
+        </div>
+
+        <div class="about-2-texts__container">
+          <div class="about-2-texts__subheading">
+            <p>
+              <span>Interventions</span> should focus on older adult's desire
+              for connectedness, participation and independence.
+            </p>
+          </div>
+          <div class="about-2-texts">
+            <div class="desktop-texts">
+              <p>
+                <span>Interventions</span> should focus on older adult's desire
+                for connectedness, participation and independence.
+              </p>
+            </div>
+            <div>
+              <p>
+                Loneliness and social isolation are growing public health
+                concerns in our aging society. Whilst these experiences occur
+                across the life span, 50% of individuals aged over 60 are at
+                risk of social isolation and one-third will experience some
+                degree of loneliness later in life. It is vital to reduce
+                loneliness and social isolation among older adults.
+              </p>
+            </div>
+            <div>
+              <p>
+                The methodology framework proposed by Asked and O'Malley and
+                further developed by Levac, et al. was used to guide the scoping
+                review process. A total of 33 reviews met the inclusion
+                criteria, evaluating a range of interventions targeted at older
+                people residing in the community or institutionalised settings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-2-blocks__container">
+          <div class="about-block">
+            <div class="about-block__info">
+              <div class="polygon"></div>
+              <span
+                >We're experienced in our individual crafts and understand how
+                each one of our roles impacts your plan holistically.</span
+              >
+            </div>
+            <div class="about-block-text">
+              <span> Needs Assessment </span>
+              <img src="assets/info.svg" alt="INFO" />
+            </div>
+          </div>
+
+          <div class="about-block two-line-text-block">
+            <div class="about-block__info">
+              <div class="polygon"></div>
+              <span
+                >We're experienced in our individual crafts and understand how
+                each one of our roles impacts your plan holistically.</span
+              >
+            </div>
+            <div class="about-block-text">
+              <span>
+                Treatment Planning &<br />
+                <span class="placement-line">
+                  &nbsp;&nbsp;&nbsp;Placement
+                  <img src="assets/info.svg" alt="INFO" />
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="about-block">
+            <div class="about-block__info">
+              <div class="polygon"></div>
+              <span
+                >We're experienced in our individual crafts and understand how
+                each one of our roles impacts your plan holistically.</span
+              >
+            </div>
+            <div class="about-block-text">
+              <span>Transportation & Logistics</span>
+              <img src="assets/info.svg" alt="INFO" />
+            </div>
+          </div>
+          <div class="about-block">
+            <div class="about-block__info">
+              <div class="polygon"></div>
+              <span
+                >We're experienced in our individual crafts and understand how
+                each one of our roles impacts your plan holistically.</span
+              >
+            </div>
+            <div class="about-block-text">
+              <span> Insurance Advocacy </span>
+              <img src="assets/info.svg" alt="INFO" />
+            </div>
+          </div>
+          <div class="about-block">
+            <div class="about-block__info">
+              <div class="polygon"></div>
+              <span
+                >We're experienced in our individual crafts and understand how
+                each one of our roles impacts your plan holistically.</span
+              >
+            </div>
+            <div class="about-block-text">
+              <span> Employment Advocacy </span>
+              <img src="assets/info.svg" alt="INFO" />
+            </div>
+          </div>
+          <div class="about-block">
+            <div class="about-block__info">
+              <div class="polygon"></div>
+              <span
+                >We're experienced in our individual crafts and understand how
+                each one of our roles impacts your plan holistically.</span
+              >
+            </div>
+            <div class="about-block-text">
+              <span> Aftercare Planning </span>
+              <img src="assets/info.svg" alt="INFO" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER BANNER -->
+    <div class="container footer-banner__container">
+      <div class="container__content">
+        <div class="footer-banner__header">
+          <img src="assets/watch-the-video.png" alt="WATCH THE VIDEO" />
+          <img src="assets/watch-the-video-360.png" alt="WATCH THE VIDEO" />
+        </div>
+
+        <div class="footer-banner__texts">
+          <div class="footer-banner__text">
+            <div>
+              <img src="assets/check-mark.svg" alt="CHECK" />
+            </div>
+            <div>
+              <h2>Needs Assessment</h2>
+              <p>
+                The Advocacy Evaluation Toolkit contains the instruments used to
+                collect data for evaluating the Consumer Voices for Coverage
+                program.
+              </p>
+            </div>
+          </div>
+          <div class="footer-banner__text">
+            <div>
+              <img src="assets/check-mark.svg" alt="CHECK" />
+            </div>
+            <div>
+              <h2>Insurance Advocacy</h2>
+              <p>
+                We are committed to advocating for appropriate coverage and
+                payment policies.
+              </p>
+            </div>
+          </div>
+          <div class="footer-banner__text">
+            <div>
+              <img src="assets/check-mark.svg" alt="CHECK" />
+            </div>
+            <div>
+              <h2>Treatment Planning & Placement</h2>
+              <p>
+                Patients can better understand medical procedures, discharge
+                instructions, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-banner__overlays">
+        <div class="footer-overlay footer-overlay__left">
+          <div class="footer-overlay__desktop">
+            <div>
+              <img src="assets/rectangle-large.png" alt="RECTANGLE" />
+            </div>
+            <div>
+              <img src="assets/reactangle-med.png" alt="RECTANGLE" />
+            </div>
+          </div>
+
+          <div class="footer-overlay__tablet">
+            <div>
+              <img src="assets/footer-overlay-768.png" alt="" />
+            </div>
+            <div>
+              <img src="assets/footer-overlay-green-768.png" alt="" />
+            </div>
+          </div>
+
+          <div class="footer-overlay__mobile">
+            <div>
+              <img src="assets/reactangle-med-360.png" alt="RECTANGLE" />
+            </div>
+            <div>
+              <img src="assets/reactangle-green-360.png" alt="RECTANGLE" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-overlay footer-overlay__right"></div>
+      </div>
+
+      <div class="footer-banner__logo">
+        <img src="assets/logo-footer.png" alt="" />
+      </div>
+
+      <div class="footer-banner__play-btn" id="playVideoBTN">
+        <img src="assets/play-video-passive.png" alt="PLAY" />
+        <img src="assets/play-video.svg" alt="PLAY" />
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer__container container">
+      <div class="container__content">
+        <div>
+          <p>@2021 Get an Intervention Inc. All rights reserved.</p>
+        </div>
+        <div>
+          <a href=""><span>Privacy Policy</span> </a>
+          <span>|</span>
+          <a href=""><span>Terms of use</span></a>
+          <span>|</span>
+          <a href=""><span>Site Map</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="video-modal__container" id="videoModal">
+      <div class="video-content__container">
+        <div class="video-container">
+          <video
+            src="assets/nature.mp4"
+            width="100%"
+            height="500px"
+            controls
+            autoplay
+            id="video"
+          ></video>
+        </div>
+
+        <div>
+          <button id="close-modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
